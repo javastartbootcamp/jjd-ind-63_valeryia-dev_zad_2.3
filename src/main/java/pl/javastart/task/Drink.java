@@ -9,4 +9,5 @@ public class Drink {
     Ingredient ing2;
     Ingredient ing3;
 
+    int drinkVolume;
 }

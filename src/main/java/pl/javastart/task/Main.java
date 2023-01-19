@@ -26,10 +26,10 @@ public class Main {
         drink1.ing2 = ing2;
         drink1.ing3 = ing3;
 
-        int drinkVolume = drink1.ing1.ingVolume+ drink1.ing2.ingVolume+ drink1.ing3.ingVolume;
+        drink1.drinkVolume = drink1.ing1.ingVolume+ drink1.ing2.ingVolume+ drink1.ing3.ingVolume;
 
     System.out.printf("Drink: %s\nCena: %.1fzł\nCzy zawiera alkohol?:%b\nSkładniki:\n%s\n%s\n%s\nPojemność: %dmł",
-                drink1.name,drink1.price,drink1.alkohol,drink1.ing1.ingName,drink1.ing2.ingName,drink1.ing3.ingName,drinkVolume);
+                drink1.name,drink1.price,drink1.alkohol,drink1.ing1.ingName,drink1.ing2.ingName,drink1.ing3.ingName,drink1.drinkVolume);
 
 
 
