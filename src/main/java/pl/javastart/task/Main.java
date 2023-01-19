@@ -15,7 +15,8 @@ public class Main {
         ing3.ingName= "wódka";
         ing3.ingVolume= 50;
 
-        int drinkVolume = ing1.ingVolume+ ing2.ingVolume + ing3.ingVolume;
+
+
         Drink drink1 = new Drink();
         drink1.name= "Mojito";
         drink1.price= 13f;
@@ -24,6 +25,9 @@ public class Main {
         drink1.ing1 = ing1;
         drink1.ing2 = ing2;
         drink1.ing3 = ing3;
+
+        int drinkVolume = drink1.ing1.ingVolume+ drink1.ing2.ingVolume+ drink1.ing3.ingVolume;
+
     System.out.printf("Drink: %s\nCena: %.1fzł\nCzy zawiera alkohol?:%b\nSkładniki:\n%s\n%s\n%s\nPojemność: %dmł",
                 drink1.name,drink1.price,drink1.alkohol,drink1.ing1.ingName,drink1.ing2.ingName,drink1.ing3.ingName,drinkVolume);
 
